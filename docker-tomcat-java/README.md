@@ -1,42 +1,32 @@
-# Docker Tomcat Java Example
+# Docker Tomcat Java 
 
 [![Software License][ico-license]](LICENSE.md)
 
-This is a simple example for running a docker container with tomcat and java.
+Ejemplo de como instalar un proyecto en contendores Docker con Tomcat y java con jsf
 
-## Get it up and running
+## Lo que necesitas (Ububntu)
 
-- [Install docker on your machine.][install-docker]
+- [Instalar docker en tu pc.][install-docker]
 
-- [Install docker-compose on your machine.][install-docker-compose]
+- [Instalar docker-compose en tu pc.][install-docker-compose]
 
-- [Install gradle on your machine.][install-gradle]
+- [Instalar gradle en tu pc.][install-gradle]
+  
 
-- Clone this repository.
 
-``` bash
-$ git clone https://github.com/mhilker/docker-tomcat-java-example
-```
-
-- Switch to the cloned directory.
-
-``` bash
-$ cd docker-tomcat-java-example
-```
-
-- Build the project.
+- Crear el proyecto.
 
 ``` bash
 $ ./gradlew build
 ```
 
-- Start the stack.
+- Crear contenedores.
 
 ``` bash
 $ docker-compose up
 ```
 
-- You should see an output like this.
+-Tienes que ver algo parecido.
 
 ``` bash
 docker-compose up --build
@@ -56,7 +46,7 @@ Attaching to dockertomcatjavaexample_tomcat_1
 tomcat_1  | 17-Jun-2017 14:03:31.578 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 403 ms
 ```
 
-- Visit `localhost:8888` in your browser. You should see an output like this.
+- En el navegador ves a `localhost:8080` Tienes que ver la página de bienvenida.
 
 ![Hello World Output with Docker and Java + Tomcat](./resources/screenshot-01.png)
 
@@ -65,6 +55,6 @@ tomcat_1  | 17-Jun-2017 14:03:31.578 INFO [main] org.apache.catalina.startup.Cat
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[install-docker]: https://docs.docker.com/engine/installation
-[install-docker-compose]: https://docs.docker.com/compose/install
-[install-gradle]: https://gradle.org/install
+[instalar-docker]: https://docs.docker.com/engine/installation
+[instalar-docker-compose]: https://docs.docker.com/compose/install
+[instalar-gradle]: https://gradle.org/install
