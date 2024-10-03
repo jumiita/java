@@ -6,11 +6,11 @@ Ejemplo de como instalar un proyecto en contendores Docker con Tomcat y java con
 
 ## Lo que necesitas (Ububntu)
 
-- [Instalar docker en tu pc.][install-docker]
+- [Instalar docker en tu pc.][instalar-docker]
 
-- [Instalar docker-compose en tu pc.][install-docker-compose]
+- [Instalar docker-compose en tu pc.][instalar-docker-compose]
 
-- [Instalar gradle en tu pc.][install-gradle]
+- [Instalar gradle en tu pc.][instalar-gradle]
   
 
 
