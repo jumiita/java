@@ -1,7 +1,18 @@
 version: '3'
 
 services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "83:80"  # El puerto 80 de Nginx se mapea al puerto 80 local
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf  # Archivo de configuración de Nginx
+    depends_on:
+      - tomcat  # Nginx se levantará solo cuando Tomcat esté listo
+
   tomcat:
     image: tomcat:9.0-alpine
     ports:
-      - "8080:8080"
+      - "8083:8080"  # Tomcat sigue mapeado al puerto 8080
+    volumes:
+      - ./build/libs/docker-tomcat-java-example.war:/usr/local/tomcat/webapps/ROOT.war
